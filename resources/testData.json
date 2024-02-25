@@ -1,0 +1,10 @@
+{
+  "userCredentials": {
+    "username": "testuser",
+    "password": "testpassword"
+  },
+  "apiEndpoints": {
+    "createOrder": "/api/createorder",
+    "getUserInfo": "/api/userinfo"
+  }
+}
