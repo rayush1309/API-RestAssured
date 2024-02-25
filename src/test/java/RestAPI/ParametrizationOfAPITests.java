@@ -38,7 +38,9 @@ public class ParametrizationOfAPITests {
     public Object[][] getData(){
         //array--> collection of Elements
         //create MultiDimensional Array--> collection of Array
-        return new Object [][]{{"REST_API","01"},{"SOAP_API","02"},{"Test_API","03"}};
+        return new Object [][]{
+                {"REST_API","01"},{"SOAP_API","02"},{"Test_API","03"}
+        };
 
     }
 

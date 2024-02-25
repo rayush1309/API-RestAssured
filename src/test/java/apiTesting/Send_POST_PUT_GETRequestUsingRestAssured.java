@@ -6,6 +6,7 @@ import io.restassured.RestAssured;
 
 import static io.restassured.RestAssured.given;
 
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 

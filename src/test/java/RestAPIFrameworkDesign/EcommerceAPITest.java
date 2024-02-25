@@ -20,7 +20,8 @@ public class EcommerceAPITest {
            // given().relaxedHTTPSValidation(): it API call will encounter any SSL certification it will by pass
             loginRequest.setUserEmail("ayushrajmr1301@gmail.com");
             loginRequest.setUserPassword("Test@123");
-            RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
+            RequestSpecification req = new RequestSpecBuilder()
+                    .setBaseUri("https://rahulshettyacademy.com")
                     .setContentType(ContentType.JSON).build();
             RequestSpecification reqLogin = given().log().all().spec(req).body(loginRequest);
             LoginResponse loginResponse = reqLogin
@@ -113,6 +114,7 @@ public class EcommerceAPITest {
 
         JsonPath jsonPath1 = new JsonPath(deleteProductResponse);
         Assert.assertEquals("Product Deleted Successfully",jsonPath1.get("message"));
+
 
 
 

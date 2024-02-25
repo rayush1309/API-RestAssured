@@ -2,6 +2,7 @@ package RestAPI;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -22,6 +23,7 @@ public class validateAPIViaStaticJson {
 
         // Read the content of the JSON file as a String
         String jsonContent = new String(Files.readAllBytes(Paths.get("resources/addPlace.json")));
+        //File jsonContent = new File("resources/addPlace.json");
         // given: all input details
         String response = given().log().all()
                 .queryParam("key", "qaclick123")

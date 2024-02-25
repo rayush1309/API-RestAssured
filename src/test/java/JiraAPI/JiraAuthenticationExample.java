@@ -14,7 +14,7 @@ public class JiraAuthenticationExample {
         // Perform the authentication request using basic auth
         Response response = RestAssured.given()
                 .contentType(ContentType.JSON)
-                .auth().preemptive().basic(username, password)
+                .auth().basic(username, password)
                 .get("/rest/auth/1/session");
 
         // Get the response body as a string
@@ -23,5 +23,6 @@ public class JiraAuthenticationExample {
         // Print the response status code and body
         System.out.println("Response Code: " + response.getStatusCode());
         System.out.println("Response Body: " + responseBody);
+
     }
 }
