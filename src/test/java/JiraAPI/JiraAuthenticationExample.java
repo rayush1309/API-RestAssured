@@ -8,8 +8,8 @@ public class JiraAuthenticationExample {
         RestAssured.baseURI = "https://ayushrajmr1301.atlassian.net";
 
         // Prepare the authentication payload
-        String username = "ayushrajmr1301@gmail.com";
-        String password = "A@123ush"; // Add your actual password here
+        String username = "ayushr";
+        String password = "A7777"; // Add your actual password here
 
         // Perform the authentication request using basic auth
         Response response = RestAssured.given()
